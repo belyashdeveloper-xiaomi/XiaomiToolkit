@@ -1,0 +1,19 @@
+<Window x:Class="MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="Xiaomi Toolkit" Height="500" Width="800"
+Background="#151521" Foreground="White">
+<StackPanel Margin="20">
+<TextBlock Text="XIAOMI TOOLKIT" FontSize="28"
+Foreground="#BBA5FF" Margin="0,0,0,15"/>
+<WrapPanel>
+<Button Content="ADB devices" Click="Adb" Margin="4" Padding="10"/>
+<Button Content="Fastboot devices" Click="Fb" Margin="4" Padding="10"/>
+<Button Content="GSI guide" Click="Gsi" Margin="4" Padding="10"/>
+</WrapPanel>
+<TextBox x:Name="Out" Margin="0,15,0,0" Height="340"
+Background="#222233" Foreground="White"
+AcceptsReturn="True" TextWrapping="Wrap"
+VerticalScrollBarVisibility="Auto"/>
+</StackPanel>
+</Window>
